@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// Redux
+import { fetchUsers } from './redux/actions';
+import { useDispatch, useSelector } from 'react-redux';
+// Components
+import Table from './components/Table';
+import FilterUsers from './components/FilterUsers';
+import SortUsers from './components/SortUsers';
+import Pagination from './components/Pagination';
+import Loading from './components/Loading';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const dispatch = useDispatch();
+	React.useEffect(() => {
+		dispatch(fetchUsers());
+	}, []);
+	const isFetching = useSelector((state) => state.isFetching);
+	if (isFetching) return <Loading />;
+	return (
+		<>
+			<FilterUsers />
+			<SortUsers />
+			<Pagination />
+			<Table />
+		</>
+	);
+};
 
 export default App;
