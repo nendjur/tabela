@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tabela/static/css/main.6563d629.chunk.css",
+    "main.js": "/tabela/static/js/main.9125f335.chunk.js",
+    "main.js.map": "/tabela/static/js/main.9125f335.chunk.js.map",
+    "runtime-main.js": "/tabela/static/js/runtime-main.7737b95d.js",
+    "runtime-main.js.map": "/tabela/static/js/runtime-main.7737b95d.js.map",
+    "static/js/2.cad31f90.chunk.js": "/tabela/static/js/2.cad31f90.chunk.js",
+    "static/js/2.cad31f90.chunk.js.map": "/tabela/static/js/2.cad31f90.chunk.js.map",
+    "index.html": "/tabela/index.html",
+    "static/css/main.6563d629.chunk.css.map": "/tabela/static/css/main.6563d629.chunk.css.map",
+    "static/js/2.cad31f90.chunk.js.LICENSE.txt": "/tabela/static/js/2.cad31f90.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7737b95d.js",
+    "static/js/2.cad31f90.chunk.js",
+    "static/css/main.6563d629.chunk.css",
+    "static/js/main.9125f335.chunk.js"
+  ]
+}
